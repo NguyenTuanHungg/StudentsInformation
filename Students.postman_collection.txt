@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "a1588b83-2a0b-4fab-bf2c-86d9c4661494",
+		"name": "Students",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21237765"
+	},
+	"item": [
+		{
+			"name": "Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"test\",\r\n    \"sex\":\"male\",\r\n    \"date\":\"2001-07-26T00:00:00.000+00:00\",\r\n    \"address\":\"phu tuc\"\r\n\r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/students/add"
+			},
+			"response": []
+		},
+		{
+			"name": "ListStudent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/students"
+			},
+			"response": []
+		},
+		{
+			"name": "ViewStudent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/api/students/63dba0aeab77b871d865b17b"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"TAI\",\r\n        \"sex\": \"male\",\r\n        \"date\": \"2001-07-26T00:00:00.000\",\r\n        \"address\": \"Hong Minh\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/api/students/edit/63db787b473990782b886839"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/api/students/63dba0084d0fa30948c6ced8"
+			},
+			"response": []
+		}
+	]
+}
