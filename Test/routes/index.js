@@ -39,7 +39,7 @@ let Student=mongoose.Schema({
 )
 
 let Students=mongoose.model('Student',Student)
-  /* GET home page. */
+  // Danh sách sinh viên
 router.get('/api/students', function(req, res, next) {
   Students.find({},(error,data)=>{
     if(!error) {
