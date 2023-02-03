@@ -1,0 +1,1 @@
+{"code":200,"message":"add successfully","addStudent":{"_id":"63dcbc7984515d37b4dc0d40","name":"testest1test1","sex":"male","date":"2001-07-26T00:00:00.000Z","address":"phu tuc","__v":0}}
